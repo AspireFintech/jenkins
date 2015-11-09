@@ -9,6 +9,7 @@ RUN echo "jenkins ALL = NOPASSWD: /usr/local/bin/docker-compose" >> /etc/sudoers
 
 RUN mkdir -p /var/jenkins_home
 RUN chown -R jenkins:jenkins /var/jenkins_home
+RUN chown -R jenkins:jenkins /tmp
 VOLUME /var/jenkins_home
 
 USER jenkins
