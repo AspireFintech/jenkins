@@ -1,4 +1,4 @@
-FROM library/jenkins
+FROM library/jenkins:1.651.1
 
 USER root
 RUN apt-get update && apt-get install sudo -y
